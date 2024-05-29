@@ -11,22 +11,41 @@
     background-color: #0a0a09;
   }
   
-  /* Estilização do navbar */
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-  }
-  header .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+ 
+/* Estilização do navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+  background-color: transparent; 
+  transition: background-color 0.2s ease;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fixed-navbar {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent; 
+  transition: background-color 0.2s ease;
+}
+
+.fixed-navbar.scrolling-active,
+header.scrolling-active {
+  background-color: #141228; 
+}
 
   
   .navbar .logo {
@@ -51,7 +70,7 @@
   }
   .hero-section {
     height: 100vh;
-    background-image: url("https://w.wallhaven.cc/full/85/wallhaven-856dlk.png");
+    background-image: url("../utils/images/lord-Caveira.png");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -267,9 +286,7 @@
     font-size: 20px; 
   }
 }
-
-  
-  
+ 
   
   .footer {
     background: #141228;
@@ -339,5 +356,11 @@
   
     .footer .social-media a {
         margin: 0 15px;
+    }
+    .footer .footer-text {
+      font-size: 0.8em;
+      color: #bbb;
+      margin: 10px 0;
+      text-align: center;
     }
   }
