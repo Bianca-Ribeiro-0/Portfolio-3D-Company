@@ -217,8 +217,8 @@ header.scrolling-active {
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
-    height: 450px;
-    width: 350px;
+    height: 350px;
+    width: 250px;
   }
   
   .card::before,
@@ -234,6 +234,7 @@ header.scrolling-active {
     font-weight: bold;
     background-color: rgb(83, 91, 206);
     transition: all 0.5s;
+    opacity: 40%;
   }
   
   .card::before {
