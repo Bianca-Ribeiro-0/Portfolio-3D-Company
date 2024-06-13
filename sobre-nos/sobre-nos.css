@@ -208,53 +208,54 @@ header.scrolling-active {
   }
   
   .card {
+    width: 250px;
+    height: 350px;
     position: relative;
     background: rgb(97, 72, 209);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
+    color: black;
     border-radius: 15px;
-    cursor: pointer;
-    height: 450px;
-    width: 350px;
+    overflow: hidden;
+    line-height: 50%;
   }
   
-  .card::before,
-  .card::after {
+  .card-info {
+    background-color: white;
     position: absolute;
-    content: "";
-    width: 20%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: rgb(83, 91, 206);
-    transition: all 0.5s;
-  }
-  
-  .card::before {
-    top: 0;
-    right: 0;
-    border-radius: 0 15px 0 100%;
-  }
-  
-  .card::after {
-    bottom: 0;
-    left: 0;
-    border-radius: 0 100%  0 15px;
-  }
-  
-  .card:hover::before,
-  .card:hover:after {
+    bottom: -5em;
     width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    transition: all 0.5s;
+    text-align: center;
+    transition: transform .3s ease-in-out;
   }
+  
+  /* Image */
+  .card-img {
+    background-color: rgb(97, 72, 209);
+    position: absolute;
+    z-index: 0;
+  }
+  
+  
+  /* Texts */
+  .title {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+  
+  
+  /* Hover */
+  .card:hover .card-info {
+    transform: translateY(-5em);
+  }
+  
   
 /* Responsividade para dispositivos móveis */
 @media (max-width: 576px) {
