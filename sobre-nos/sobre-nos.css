@@ -190,21 +190,24 @@ header.scrolling-active {
     color: #fff;
   }
   p {
-    margin-top: 50px;
+    margin-top: 50px; 
   }
   hr {
     color: #fff;
     width: 250px; 
     margin-top: 10px;
   }
+  span {
+    text-decoration: dotted;
+  }
 
-  /* ver se é possivel colocar a ft de personagens aleatorios que combinados e tal  */
+
   .nosso-time {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 14px;
-    padding: 50px;
-    margin-top: 60px;
+    padding: 30px 50px 15em 50px;
+    margin-top: 40px;
   }
   
   .card {
@@ -219,7 +222,7 @@ header.scrolling-active {
   }
   
   .card-info {
-    background-color: white;
+    background-color: rgb(210, 232, 253);
     position: absolute;
     bottom: -5em;
     width: 100%;
