@@ -3,7 +3,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeInAnimation 1.5s ease;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Estilização do corpo */
@@ -68,6 +79,7 @@ header.scrolling-active {
 }
  
 .hero-section {
+  position: relative; 
   height: 100vh;
   background-image: url("https://w.wallhaven.cc/full/3z/wallhaven-3z3v6y.jpg");
   background-position: center;
@@ -76,6 +88,27 @@ header.scrolling-active {
   align-items: center;
   padding: 0 20px;
 }
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajuste o valor de 0.5 para alterar a opacidade */
+  z-index: 1; /* Faz a sobreposição ficar abaixo do conteúdo da hero section */
+}
+
+.hero-section .content {
+  position: relative;
+  z-index: 2; /* Faz o conteúdo ficar acima da sobreposição */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+
 .hero-section .content {
   max-width: 1200px;
   margin: 0 auto;
@@ -91,6 +124,7 @@ header.scrolling-active {
   font-weight: 300;
   max-width: 600px;
   margin-top: 15px;
+  font-size: 18px;
 }
 .hero-section .content button {
   background: #fff;
@@ -150,12 +184,14 @@ header.scrolling-active {
     flex-direction: column;
     padding: 70px 40px 0;
     transition: left 0.2s ease;
+    
   }
   header.show-mobile-menu .navbar .menu-links {
     left: 0;
   }
   .navbar a {
     color: #000;
+    text-shadow: none !important;
   }
   .hero-section .content {
     text-align: center;
@@ -170,6 +206,7 @@ header.scrolling-active {
   
   .hero-section .content button {
     padding: 9px 18px;
+    text-shadow: none !important;
   }
 }
 
@@ -181,7 +218,8 @@ header.scrolling-active {
   justify-content: center; 
   color: #fff;
   margin-bottom: 34px;
-  margin-top: 58px;
+  margin-top: 78px;
+  margin-left: 20px;
 }
  
 /* Estilização da section cards */

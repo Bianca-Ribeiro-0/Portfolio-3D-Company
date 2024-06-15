@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', checkScroll);
 });
 
+//Valida campos do formulário
 function validarForm() {
     var nomeInput = document.getElementById("nome");
     var sobrenomeInput = document.getElementById("sobrenome");
