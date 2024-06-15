@@ -75,6 +75,7 @@ header.scrolling-active {
     color: #fff;
     text-decoration: none;
     transition: 0.4s ease;
+    font-size: 20px;
   }
   .navbar a:hover {
     color: #b14db6;
