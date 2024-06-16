@@ -1,6 +1,6 @@
 # Portfolio 3D Company
 
-Este repositório contém os projetos e trabalhos da 3D Company para fins de portfolio.
+Este repositório contém os projetos e trabalhos da 3D Company para fins de portfolio. Acesse nosso site:
 
 ## Estrutura do Repositório
 
@@ -24,7 +24,7 @@ Este repositório contém os projetos e trabalhos da 3D Company para fins de por
 
 Atualmente, este repositório não aceita contribuições externas, pois é exclusivamente utilizado para exibição de trabalhos.
 
-## Como Usar
+## Como Acessar
 
 1. Clone este repositório:
 git clone https://github.com/Bianca-Ribeiro-0/Portfolio-3D-Company.git
@@ -33,6 +33,10 @@ git clone https://github.com/Bianca-Ribeiro-0/Portfolio-3D-Company.git
 cd projetos/portfolio-3d-company
 
 3. Abra o projeto utilizando a ferramenta adequada para visualização do nosso portfólio!
+
+ou
+
+Acesse nosso site diretamente:
 
 
 ## Licença
