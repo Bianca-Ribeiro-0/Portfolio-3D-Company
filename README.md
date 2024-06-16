@@ -4,15 +4,15 @@ Este repositório contém os projetos e trabalhos da 3D Company para fins de por
 
 ## Estrutura do Repositório
 
-- `/trabalhos`
+`/trabalhos`
   - Contém todos os projetos desenvolvidos pela Aurora Animations Company.
-- `/serviços`
+ `/serviços`
   - Contém informações sobre os serviços oferecidos pela nossa empresa.
-- `/sobre-nos`
+ `/sobre-nos`
  - Nossos colaboradores e objetivos
-- `/trabalhe-conosco`
+ `/trabalhe-conosco`
  - FAQ sobre nosso dia-a-dia e envie seu portfólio para trabalhar conosco!
-- `/curriculo`
+ `/curriculo`
  - Curriculo dos criadores do site
  
 
