@@ -223,7 +223,7 @@ header.scrolling-active {
 
   .nosso-time {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 14px;
     padding: 30px 50px 15em 50px;
     margin-top: 40px;
