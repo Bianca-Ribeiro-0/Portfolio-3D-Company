@@ -1,6 +1,6 @@
 # Portfolio 3D Company
 
-Este repositório contém os projetos e trabalhos da 3D Company para fins de portfolio. Acesse nosso site:
+Este repositório contém os projetos e trabalhos da 3D Company para fins de portfolio. Acesse nosso site: https://portfolio-3-d-company.vercel.app/
 
 ## Estrutura do Repositório
 
@@ -36,7 +36,7 @@ cd projetos/portfolio-3d-company
 
 ou
 
-Acesse nosso site diretamente:
+Acesse nosso site diretamente: https://portfolio-3-d-company.vercel.app/
 
 
 ## Licença
